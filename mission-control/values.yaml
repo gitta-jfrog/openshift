@@ -1,0 +1,24 @@
+common:
+  uid: 1000580000
+  gid: 1000580000
+
+postgresql:
+  enabled: false
+
+database:
+  type: postgresql
+  driver: org.postgresql.Driver
+  ## Please make sure these are created under the provided database
+  name: mission_control
+  jfisSchema: insight_server
+  jfmcSchema: jfmc_server
+  jfscSchema: insight_scheduler
+  ## Use single user and password for all the services
+  user: "jfmc"
+  password: "password"
+  url: "jdbc:postgresql://<POSTGRESQL_IP>:5432/mission_control"
+
+
+elasticsearch:
+  configureDockerHost: false
+  enabled: true
