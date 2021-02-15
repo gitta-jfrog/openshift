@@ -13,6 +13,6 @@ postgresql:
 database:
   type: "postgresql"
   driver: "org.postgresql.Driver"
-  url: "jdbc:postgresql://<DATABASE_IP>:5432/artifactory"
+  url: "jdbc:postgresql://<POSTGRESQL_IP>:5432/artifactory"
   user: "artifactory"
   password: "password"
