@@ -1,0 +1,18 @@
+artifactory:
+  uid: 1000580000
+  gid: 1000580000
+
+
+nginx:
+  uid: 1000580000
+  gid: 1000580000
+
+postgresql:
+  enabled: false
+
+database:
+  type: "postgresql"
+  driver: "org.postgresql.Driver"
+  url: "jdbc:postgresql://<DATABASE_IP>:5432/artifactory"
+  user: "artifactory"
+  password: "password"
