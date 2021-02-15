@@ -1,0 +1,16 @@
+common:
+  uid: 1000580000
+  gid: 1000580000
+
+redis:
+  uid: 1000580000
+  
+postgresql:
+  enabled: false
+
+database:
+  type: postgresql
+  driver: org.postgresql.Driver
+  user: "distribution"
+  password: "password"
+  url: "jdbc:postgresql://<POSTGRESQL_IP>:5432/distribution"
