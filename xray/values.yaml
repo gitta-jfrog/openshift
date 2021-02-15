@@ -1,0 +1,19 @@
+common:
+  xrayUserId: 1000580000
+  xrayGroupId: 1000580000
+
+
+rabbitmq:
+  podSecurityContext:
+    fsGroup: 1000580000
+    runAsUser: 1000580000
+  
+postgresql:
+  enabled: false
+
+database:
+  type: "postgresql"
+  driver: "org.postgresql.Driver"
+  url: "postgres://<POSTGRESQL_IP>:5432/xraydb"
+  user: "xray"
+  password: "xray"
